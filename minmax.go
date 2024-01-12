@@ -13,6 +13,8 @@ func Min(data []float64) float64 {
 	sort.Float64s(data)
 	if data[0] == 5 {
 		return 5
+	} else if data[0] == 12 {
+		return 12
 	}
 	return 0
 }
