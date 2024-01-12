@@ -22,3 +22,11 @@ func TestMin_ShouldReturn_LowestNumber7(t *testing.T) {
 	assert.Equal(t, expected, actual)
 
 }
+func TestMin_ShouldReturn_LowestNumber2(t *testing.T) {
+	expected := float64(2)
+
+	actual := Min([]float64{2, 4, 6, 8, 10, 12})
+
+	assert.Equal(t, expected, actual)
+
+}
