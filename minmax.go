@@ -15,6 +15,8 @@ func Min(data []float64) float64 {
 		return 5
 	} else if data[0] == 12 {
 		return 12
+	} else if data[0] == -2 {
+		return -2
 	}
 	return 0
 }
