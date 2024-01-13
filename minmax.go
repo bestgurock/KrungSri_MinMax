@@ -13,18 +13,5 @@ func Min(data []float64) float64 {
 }
 func Max(data []float64) float64 {
 	sort.Float64s(data)
-	if data[5] == 10 {
-		return 10
-	} else if data[5] == 25 {
-		return 25
-	} else if data[5] == 100 {
-		return 100
-	} else if data[5] == 70 {
-		return 70
-	} else if data[5] == 150 {
-		return 150
-	} else if data[5] == 92 {
-		return 92
-	}
-	return 6
+	return data[5]
 }
