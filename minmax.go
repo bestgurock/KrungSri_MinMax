@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math"
 	"sort"
 )
@@ -34,4 +35,13 @@ func Avg(data []float64) float64 {
 	result := sum / float64(length)
 	resultformat := math.Round(result*1e6) / 1e6
 	return resultformat
+}
+func main() {
+	actual := ([]float64{6, 9, 15, -2, 92, 11})
+	fmt.Println()
+	fmt.Println("minimum value = ", Min(actual))
+	fmt.Println("maximum value = ", Max(actual))
+	fmt.Println("number of elements in the sequence = ", NumberOfLength(actual))
+	fmt.Println("average value = ", Avg(actual))
+	fmt.Println()
 }
