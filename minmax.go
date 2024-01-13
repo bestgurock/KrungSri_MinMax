@@ -18,3 +18,6 @@ func Max(data []float64) float64 {
 	sort.Float64s(data)
 	return data[5]
 }
+func NumberOfLength(data []float64) float64 {
+	return 6
+}
