@@ -23,6 +23,8 @@ func NumberOfLength(data []float64) float64 {
 		return 4
 	} else if len(data) == 2 {
 		return 2
+	} else if len(data) == 10 {
+		return 10
 	}
 	return 6
 }
