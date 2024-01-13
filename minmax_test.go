@@ -172,3 +172,10 @@ func TestAvg_ShouldReturn_Avgnumber3_5(t *testing.T) {
 
 	assert.Equal(t, expected, actual)
 }
+func TestAvg_ShouldReturn_Avgnumber8_5(t *testing.T) {
+	expected := 8.5
+
+	actual := Avg([]float64{6, 7, 8, 9, 10, 11})
+
+	assert.Equal(t, expected, actual)
+}
