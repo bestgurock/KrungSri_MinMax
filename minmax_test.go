@@ -1,9 +1,8 @@
 package main
 
 import (
-	"testing"
-
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func TestMin_ShouldReturn_LowestNumber1(t *testing.T) {
@@ -53,4 +52,11 @@ func TestMin_ShouldReturn_LowestNumber(t *testing.T) {
 
 	assert.Equal(t, expected, actual)
 
+}
+func TestMin_WhenDataIsEmpty_ShouldReturn0(t *testing.T) {
+	expected := 0.0
+
+	actual := Min([]float64{})
+
+	assert.Equal(t, expected, actual)
 }
