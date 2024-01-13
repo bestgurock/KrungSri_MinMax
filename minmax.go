@@ -23,8 +23,9 @@ func NumberOfLength(data []float64) float64 {
 }
 func Avg(data []float64) float64 {
 	sum := 0
-	for i := 0; i < 6; i++ {
+	length := len(data)
+	for i := 0; i < length; i++ {
 		sum += int(data[i])
 	}
-	return float64(sum) / 6
+	return float64(sum) / float64(length)
 }
