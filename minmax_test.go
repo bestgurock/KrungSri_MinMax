@@ -151,3 +151,10 @@ func TestNumberOfLength_ShouldReturn_Length10(t *testing.T) {
 
 	assert.Equal(t, expected, actual)
 }
+func TestNumberOfLength_ShouldReturn_Length(t *testing.T) {
+	expected := 6.0
+
+	actual := NumberOfLength([]float64{6, 9, 15, -2, 92, 11})
+
+	assert.Equal(t, expected, actual)
+}

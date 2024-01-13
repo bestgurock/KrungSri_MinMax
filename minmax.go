@@ -19,12 +19,5 @@ func Max(data []float64) float64 {
 	return data[5]
 }
 func NumberOfLength(data []float64) float64 {
-	if len(data) == 4 {
-		return 4
-	} else if len(data) == 2 {
-		return 2
-	} else if len(data) == 10 {
-		return 10
-	}
-	return 6
+	return float64(len(data))
 }
