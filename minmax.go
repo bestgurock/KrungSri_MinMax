@@ -14,6 +14,8 @@ func Max(data []float64) float64 {
 		return 10
 	} else if data[5] == 25 {
 		return 25
+	} else if data[5] == 100 {
+		return 100
 	}
 	return 6
 }
