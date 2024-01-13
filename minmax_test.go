@@ -158,7 +158,7 @@ func TestNumberOfLength_ShouldReturn_Length(t *testing.T) {
 
 	assert.Equal(t, expected, actual)
 }
-func TestNumberOfLength_ShouldReturn0(t *testing.T) {
+func TestNumberOfLength_WhenDataIsEmpty_ShouldReturn0(t *testing.T) {
 	expected := 0.0
 
 	actual := NumberOfLength([]float64{})
@@ -190,6 +190,13 @@ func TestAvg_ShouldReturn_Avgnumber(t *testing.T) {
 	expected := 21.833333
 
 	actual := Avg([]float64{6, 9, 15, -2, 92, 11})
+
+	assert.Equal(t, expected, actual)
+}
+func TestAvg_WhenDataIsEmpty_ShouldReturn0(t *testing.T) {
+	expected := 0.0
+
+	actual := Avg([]float64{})
 
 	assert.Equal(t, expected, actual)
 }
