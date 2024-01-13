@@ -1,6 +1,7 @@
 package main
 
 import (
+	"math"
 	"sort"
 )
 
@@ -22,10 +23,12 @@ func NumberOfLength(data []float64) float64 {
 	return float64(len(data))
 }
 func Avg(data []float64) float64 {
-	sum := 0
+	sum := 0.0
 	length := len(data)
 	for i := 0; i < length; i++ {
-		sum += int(data[i])
+		sum += float64(data[i])
 	}
-	return float64(sum) / float64(length)
+	result := sum / float64(length)
+	resultformat := math.Round(result*1e6) / 1e6
+	return resultformat
 }
