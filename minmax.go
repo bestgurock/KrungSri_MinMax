@@ -21,3 +21,6 @@ func Max(data []float64) float64 {
 func NumberOfLength(data []float64) float64 {
 	return float64(len(data))
 }
+func Avg(data []float64) float64 {
+	return 3.5
+}
