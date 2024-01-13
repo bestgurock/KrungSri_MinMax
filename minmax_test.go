@@ -116,3 +116,10 @@ func TestMax_ShouldReturn_HighestNumber(t *testing.T) {
 	assert.Equal(t, expected, actual)
 
 }
+func TestMax_WhenDataIsEmpty_ShouldReturn0(t *testing.T) {
+	expected := 0.0
+
+	actual := Max([]float64{})
+
+	assert.Equal(t, expected, actual)
+}
