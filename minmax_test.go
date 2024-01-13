@@ -76,3 +76,11 @@ func TestMax_ShouldReturn_HighestNumber10(t *testing.T) {
 	assert.Equal(t, expected, actual)
 
 }
+func TestMax_ShouldReturn_HighestNumber25(t *testing.T) {
+	expected := float64(25)
+
+	actual := Max([]float64{2, 6, 9, 14, 20, 25})
+
+	assert.Equal(t, expected, actual)
+
+}

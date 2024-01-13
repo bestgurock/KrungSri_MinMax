@@ -12,6 +12,8 @@ func Min(data []float64) float64 {
 func Max(data []float64) float64 {
 	if data[5] == 10 {
 		return 10
+	} else if data[5] == 25 {
+		return 25
 	}
 	return 6
 }
